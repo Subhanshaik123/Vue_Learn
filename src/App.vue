@@ -15,4 +15,5 @@ import Day_6 from "./Day_6.vue";
  <Day_4 />
  <Day_5 />
  <Day_6 />
+
 </template>
