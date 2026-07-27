@@ -41,7 +41,7 @@ const today = new Date().toLocaleDateString("en-GB")
   </div>
 </template>
 
-<style>
+<style scoped>
 .myclass {
   background-color: cyan;
   padding: 20px;

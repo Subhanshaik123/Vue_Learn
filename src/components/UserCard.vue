@@ -14,6 +14,8 @@ defineProps({
 
     <p><strong>City:</strong> {{ user.city }}</p>
   </div>
+  <h1>shaik subhan</h1>
+  <h2>I'm a full stack developer</h2>
 </template>
 
 <style scoped>
@@ -25,9 +27,18 @@ defineProps({
     box-shadow: 2px grey;
     width:300px;
     background:#f5f5f5;
+    cursor: pointer;
 }
 .card:hover{
     box-shadow:2px grey;
     transorm:scale(1);
+}
+h1{
+    color:blue;
+    text-align:center;
+}
+h2{
+   color:rgb(2, 2, 88);
+    text-align:center;
 }
 </style>
