@@ -1,6 +1,26 @@
 <script setup>
-defineProps({
-  user: Object
+const props = defineProps({
+  user: {
+    type: Object,
+    default: () => ({})
+  },
+
+  title: {
+    type: String,
+    required: true,
+    employeeName: String,
+  employeeAge: Number
+  },
+
+  count: {
+    type: Number,
+    default: 0
+  },
+
+  variant: {
+    type: String,
+    default: "primary"
+  }
 })
 </script>
 
@@ -14,8 +34,20 @@ defineProps({
 
     <p><strong>City:</strong> {{ user.city }}</p>
   </div>
-  <h1>shaik subhan</h1>
-  <h2>I'm a full stack developer</h2>
+
+  <h1>Shaik Subhan</h1>
+  <h2>I'm a Full Stack Developer</h2>
+
+  <div class="card">
+    <h2>{{ title }}</h2>
+
+    <p>Count: {{ count }}</p>
+
+    <p>Variant: {{ variant }}</p>
+     <h2>{{ employeeName }}</h2>
+
+  <p>{{ employeeAge }}</p>
+  </div>
 </template>
 
 <style scoped>
@@ -24,21 +56,23 @@ defineProps({
     padding:15px;
     margin:10px;
     border-radius:10px;
-    box-shadow: 2px grey;
     width:300px;
     background:#f5f5f5;
-    cursor: pointer;
+    cursor:pointer;
+    box-shadow:0 2px 8px gray;
 }
+
 .card:hover{
-    box-shadow:2px grey;
-    transorm:scale(1);
+    box-shadow:0 4px 12px gray;
 }
+
 h1{
     color:blue;
     text-align:center;
 }
+
 h2{
-   color:rgb(2, 2, 88);
+    color:rgb(2,2,88);
     text-align:center;
 }
 </style>

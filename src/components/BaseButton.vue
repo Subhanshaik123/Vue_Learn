@@ -5,12 +5,19 @@
   <button class="btn">
     <slot></slot>
   </button>
+  <button :disabled="disabled">
+    Save
+  </button>
 </template>
 
 <script setup>
 function showMessage(){
   alert("Global Component Button Clicked!")
 }
+const props = defineProps({
+  disabled: Boolean
+})
+
 </script>
 
 <style scoped>
