@@ -20,6 +20,7 @@ import BaseCard from './components/BaseCard.vue'
 import DataList from './components/DataList.vue'
 import MouseTracer from './components/MouseTracer.vue'
 import ChildComponent from './components/ChildComponent.vue'
+import Day_11 from './Day_11.vue'
 import {provide} from 'vue'
 const title = ref("Vue.js")
 
@@ -84,4 +85,5 @@ provide('theme', theme)
   <p>Mouse Position is at: {{ x }}, {{ y }}</p>
   </MouseTracer>
   <ChildComponent />
+  <Day_11 />
 </template>
