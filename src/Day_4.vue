@@ -170,7 +170,7 @@ function changeProduct() {
 <button @click="changeProduct">Change Product</button>
 </div></fieldset>
 </template>
-<style>
+<style scoped>
 *{
   background-color: cyan;
 }

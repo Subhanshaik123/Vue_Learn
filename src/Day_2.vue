@@ -80,7 +80,7 @@ const subhanUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEJAzu5aT
    </form>
    </fieldset>
 </template>
-<style>
+<style scoped>
 h1{
   color: blue;
   border-radius: 10px;

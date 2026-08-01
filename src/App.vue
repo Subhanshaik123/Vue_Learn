@@ -22,6 +22,7 @@ import MouseTracer from './components/MouseTracer.vue'
 import ChildComponent from './components/ChildComponent.vue'
 import Day_11 from './Day_11.vue'
 import Day_12 from './Day_12.vue'
+import Day_13 from './Day_13.vue'
 import {provide} from 'vue'
 const title = ref("Vue.js")
 
@@ -88,4 +89,5 @@ provide('theme', theme)
   <ChildComponent />
   <Day_11 />
   <Day_12 />
+  <Day_13 />
 </template>
